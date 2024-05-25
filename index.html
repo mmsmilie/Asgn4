@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Open World</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body onload="main()">
+  <canvas id="webgl" width="2400" height="1000" tabindex="0"></canvas>
+  <h1> WASD to Move, Q to Rotate Left, E to Rotate Right, T to Rotate Up, G to Rotate Down, Mouse to also rotate</h1>
+  <h1> C to create a block, B to break a block. You can only break blocks you placed.</h1>
+  Basic Map:<input type="button" value="Basic Map" onclick="setBasicMap()"/> Cave Map:<input type="button" value="Cave Map" onclick="setCaveMap()"/>
+  <script src="index.js"></script>
+  <script src="./lib/cuon-utils.js"></script>
+  <script src="./lib/cuon-matrix.js"></script>
+  <script src="./lib/webgl-debug.js"></script>
+  <script src="./lib/webgl-utils.js"></script>
+  <script src="./lib/camera.js"></script>
+  <script src="./lib/square.js"></script>
+  <script src="./lib/stats.js"></script>
+  <script src="./lib/cube.js"></script>
+  <script src="./lib/mapdata.js"></script>
+
+</body>
+
+</html>
