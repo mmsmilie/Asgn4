@@ -7,10 +7,14 @@
 </head>
 
 <body onload="main()">
-  <canvas id="webgl" width="2400" height="1000" tabindex="0"></canvas>
-  <h1> WASD to Move, Q to Rotate Left, E to Rotate Right, T to Rotate Up, G to Rotate Down, Mouse to also rotate</h1>
-  <h1> C to create a block, B to break a block. You can only break blocks you placed.</h1>
-  Basic Map:<input type="button" value="Basic Map" onclick="setBasicMap()"/> Cave Map:<input type="button" value="Cave Map" onclick="setCaveMap()"/>
+  <canvas id="webgl" width="1000" height="1000" tabindex="0"></canvas>
+  <br>
+  <input type="button" value="Toggle Normals" onclick="toggleNormals()" />
+  <input type="button" value="Toggle Light" onclick="toggleLight()" />
+  <br>
+  Light X: <input type="range" id="lightX" min="-10" max="10" step="0.1" value="0.0">
+  Light Y: <input type="range" id="lightY" min="-10" max="10" step="0.1" value="5.0">
+  Light Z: <input type="range" id="lightZ" min="-10" max="10" step="0.1" value="0.0">
   <script src="index.js"></script>
   <script src="./lib/cuon-utils.js"></script>
   <script src="./lib/cuon-matrix.js"></script>
@@ -18,6 +22,7 @@
   <script src="./lib/webgl-utils.js"></script>
   <script src="./lib/camera.js"></script>
   <script src="./lib/square.js"></script>
+  <script src="./lib/sphere.js"></script>
   <script src="./lib/stats.js"></script>
   <script src="./lib/cube.js"></script>
   <script src="./lib/mapdata.js"></script>
